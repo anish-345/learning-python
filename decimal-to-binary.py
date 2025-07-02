@@ -1,4 +1,4 @@
-d = float(input('Enter a decimal no. : '))
+d = float(input('Enter a decimal no. less than 1 : '))
 p = 0
 while ((2**p)*d)%1 != 0 :
     print (f"remainder = {str(((2**p)*d) - int(((2**p)*d)))}")
@@ -14,6 +14,6 @@ while n >0 :
 for i in range (p - len(res)):
      res = '0' + res
                
-res = res[0:-p] + '.' + res[-p:]
+res = res[0:-p] + '0.' + res[-p:]
 print (f"the binary representation of {str(d)} is {str(res)} ")
      
